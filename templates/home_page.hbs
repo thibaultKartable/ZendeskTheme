@@ -8,8 +8,7 @@
 
     <section class="category-list">
         {{#each categories}}
-
-            <article class="category-item category-item--{{@index}}">
+            <article class="category-item category-item--{{id}}">
                 <a href="{{url}}"><h2 class="h2">{{name}}</h2></a>
             </article>
         {{/each}}

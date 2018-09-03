@@ -11,8 +11,10 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 13px;
   font-weight: lighter;
-  line-height: 1.5;
+  line-height: 1.375;
   margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 img {
@@ -335,6 +337,13 @@ select::-ms-expand {
   max-width: 450px;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex-shrink:1;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.breadcrumbs li:last-child {
+  flex-shrink:0;
 }
 
 .breadcrumbs li + li:before {
@@ -648,19 +657,16 @@ html {
 body {
   font-size: 13px;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.375;
   margin: 0;
 }
 
 a {
-  color: $color_1;
+  color: $color_5;
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
 
 img {
   vertical-align: middle;
@@ -680,6 +686,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size:2.5rem;
   text-align:center;
 }
+.h2 {
+  font-size:2rem;
+}
 
 @media screen and (min-width:760px){
   .h1 {
@@ -691,6 +700,16 @@ h1, h2, h3, h4, h5, h6 {
   p {
     font-size: 1.8rem;
   }
+  a {
+    transition: all ease-in-out 0.2s;
+    font-size: 1.8rem;
+  }
+  a:hover {
+    cursor: pointer;
+    text-decoration:none;
+    color: $blueKartable;
+  }
+
 }
 
 .section-area h1 {
@@ -709,12 +728,11 @@ ul, ol {
   display:block;
   width:30px;
   height:30px;
-  font-size:1em;
+  font-size:1rem;
   opacity:0.3;
   background-position:center;
   background-repeat: no-repeat;
 }
-
 
 .icon-close {
   background-image: url("$assets-icon-close-svg");
@@ -746,15 +764,23 @@ ul, ol {
   opacity: 0.8;
   background-size: 2em;
 }
+
+@media screen and (min-width: 760px){
+  .icon {
+    font-size:1.5rem;
+  }
+}
 /* ====================================================
    Sub Nav
    ==================================================== */
-.sub-nav {
-  margin-bottom: 15px;
-}
 
-.sub-nav form {
-  display: none;
+.breadcrumbs {
+  display:flex;
+  align-items:center;
+}
+.breadcrumbs a,
+.breadcrumbs li {
+  font-size:1.2rem;
 }
 
 .page-header {
@@ -1270,32 +1296,32 @@ button:active,
   background-image: url("$assets-category-books-svg");
 }
 
-.category-item--0 {
+.category-item--201150645 {
   background-image: url("$assets-category-account-svg");
   background-size:76px;
   background-position: 7px center;
 }
-.category-item--1 {
+.category-item--201346109 {
   background-image: url("$assets-category-learn-svg");
   background-size:66px;
   background-position: 12px center;
 }
-.category-item--2 {
+.category-item--201126089 {
   background-image: url("$assets-category-content-svg");
   background-size:58px;
   background-position: 16px center;
 }
-.category-item--3 {
+.category-item--201126109 {
   background-image: url("$assets-category-subscription-svg");
   background-size:82px;
   background-position: 4px center;
 }
-.category-item--4 {
+.category-item--360000087509 {
   background-image: url("$assets-category-books-svg");
   background-size:80px;
   background-position: 5px center;
 }
-.category-item--5 {
+.category-item--115000724869 {
   background-image: url("$assets-category-talk-svg");
   background-size:76px;
   background-position: 7px center;
@@ -1339,178 +1365,85 @@ button:active,
   text-decoration: none;
 }
 
-.knowledge-base:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+.category-page__image {
+  width:190px;
+  height:220px;
+  margin: 32px auto 48px auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.community h4 {
-  float: right;
-  margin: 0;
+.category-page__image--201150645 {
+  background-image: url("$assets-category-account-svg");
+}
+.category-page__image--201346109 {
+  background-image: url("$assets-category-learn-svg");
+}
+.category-page__image--201126089 {
+  background-image: url("$assets-category-content-svg");
+}
+.category-page__image--201126109 {
+  background-image: url("$assets-category-subscription-svg");
+}
+.category-page__image--360000087509 {
+  background-image: url("$assets-category-books-svg");
+}
+.category-page__image--115000724869 {
+  background-image: url("$assets-category-talk-svg");
 }
 
-[dir=rtl] .community h4 {
-  float: left;
+.questions-list {
+  margin-top:72px;
 }
 
-.trending-questions + h4 {
-  margin-top: 65px;
+.article-list__item{
+  margin: 24px 0;
 }
 
-.community,
-.section-tree,
-.subtle-wrap,
-.article-sidebar section {
-  background: #fff;
-  padding: 20px 30px 30px;
-  margin: 25px 7px;
-  border-radius:3px;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+@media screen and (min-width: 760px){
+  .article-list {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  .article-list__item{
+    width:45%;
+  }
 }
 
-.subtle-wrap {
-  margin-top: 15px;
+.app-container--section h1 {
+    margin: 70px auto;
 }
 
-.community .recent-activity {
-  padding: 0;
-  width: auto;
+.app-container--section h1 .section-subscribe {
+  display:block;
 }
 
-.community h2 {
-  border-bottom: 1px solid;
-  border-bottom-color: #ececec;
-  border-bottom-color: rgba(0, 0, 0, 0.07);
-  font-size: 16px;
-  margin-bottom: 20px;
-  margin-top: 0;
-  padding-bottom: 12px;
-  text-transform: uppercase;
+
+.app-container--section h1 .section-subscribe .dropdown-toggle{
+  border-radius:80px;
+  background: $blueKartable;
+  color:white;
+  text-transform:uppercase;
+  font-weight:bold;
+  position:relative;
 }
 
-.community h2 a {
-  font-size: 12px;
-  margin-left: 5px;
+.app-container--section h1 .section-subscribe .dropdown-toggle::after {
+  color:white;
 }
 
-.community h4 a {
-  font-size: 11px;
-  font-weight: normal;
-  margin-left: 5px;
-}
-
-.section-tree .section {
-  display: inline-block;
-  margin: 0 0 30px;
-  vertical-align: top;
-  width: 49%;
-}
-
-.section-tree h3 {
-  font-size: 20px;
-  line-height: 24px;
-  margin: 10px 0 5px;
-}
-
-.section-tree ul, ul.article-list {
-  color: $color_5;
-  font-size: 14px;
-  list-style-position: outside;
-  list-style-type: disc;
-}
-
-.knowledge-base h4:before, .community h4:before {
-  color: $color_3;
-  font-family: "entypo";
-  font-size: 20px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.article-list li, .community li {
-  margin-bottom: 0;
-  padding-right: 30px;
-}
-
-.article-list li {
-  line-height: 28px;
-  list-style-type: none;
-}
-
-.section h3 a {
-  color: inherit;
-  font-size: .85em;
-  font-weight: 700;
-}
-
-.article-promoted span {
-  cursor: default;
-  margin-right: 5px;
-  position: relative;
-}
-
-.article-promoted span:before,
-.article-promoted span:after {
-  display: none;
-  position: absolute;
-}
-
-.article-promoted span:hover:before,
-.article-promoted span:hover:after {
-  display: block;
-}
-
-.article-promoted span:before {
-  background-color: #222;
-  background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 4px;
-  color: #fff;
-  content: attr(data-title);
-  left: -10px;
-  margin-top: 5px;
-  padding: 3px 10px;
-  top: 100%;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.article-promoted span:after {
-  border-bottom: 5px solid;
-  border-bottom-color: #222;
-  border-bottom-color: rgba(0, 0, 0, 0.85);
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  bottom: -5px;
-  content: "";
-  height: 0;
+.app-container--section h1 .section-subscribe .dropdown-menu{
   left: 50%;
-  margin-left: -5px;
-  width: 0;
+  transform: translateX(-50%);
 }
 
-.see-all-articles {
-  display: inline-block;
-  font-size: 12px;
-  margin-top: 10px;
-  text-decoration: underline;
+@media screen and (min-width: 760px){
+  .app-container--section h1 {
+    margin: 100px auto 120px auto;
+  }
 }
-
-.category-description, .section-description {
-  color: $color_4;
-  font-size: 15px;
-  line-height: 15px;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.section-subscribe, .section-unsubscribe {
-  float: right;
-  margin-top: 5px;
-}
-
 /* ====================================================
    Article
    ==================================================== */

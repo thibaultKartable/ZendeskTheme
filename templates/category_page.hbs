@@ -1,25 +1,26 @@
-<nav class="sub-nav clearfix category-breadcrumbs">
-  {{breadcrumbs}}
-</nav>
-<section class="clearfix">
-  <h1>{{category.name}}</h1>
+<div class="app-container">
+    <nav class="breadcrumb">
+    {{breadcrumbs}}
+    </nav>
+    <figure class="category-page__image category-page__image--{{category.id}}"></figure>
+  <h1 class="h1">{{category.name}}</h1>
   <p class="category-description">{{category.description}}</p>
   {{#if category.sections}}
-    <div class="section-tree">
+    <div class="questions">
       {{#each sections}}
-        <section class="section">
-          <h3>
+        <section class="questions-list">
+          <h2>
             {{#if internal}}
               <span class="visibility-internal" data-title="{{t 'internal'}}">
                 <span class="visibility-internal-icon"></span>
               </span>
             {{/if}}
-            <a href="{{url}}">{{name}}</a>
-          </h3>
+            <a class="h2" href="{{url}}">{{name}}</a>
+          </h2>
           {{#if articles}}
             <ul class="article-list">
               {{#each articles}}
-                <li {{#if promoted}} class="article-promoted" {{/if}} >
+                <li {{#if promoted}} class="article-list__item--promoted" {{/if}} class="article-list__item">
                   {{#if promoted}}
                     <span data-title="{{t 'promoted'}}">★</span>
                   {{/if}}
@@ -48,4 +49,4 @@
       <a href="{{category.url}}">{{t 'empty'}}</a>
     </i>
   {{/if}}
-</section>
+</div>
