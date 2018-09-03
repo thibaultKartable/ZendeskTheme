@@ -1,0 +1,21 @@
+<nav class="sub-nav clearfix">
+  {{breadcrumbs}}
+</nav>
+
+<div class="clearfix">
+
+  <section class="main-column">
+   <h1>{{t 'submit_a_request'}}{{#if parent}}
+     <span class="follow-up-hint">
+        {{follow_up}}
+      </span>
+    {{/if}}</h1>
+
+    <div class="form">
+      {{request_form}}
+    </div>
+  </section>
+
+</div>
+
+{{chat}}

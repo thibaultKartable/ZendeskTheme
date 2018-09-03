@@ -1,0 +1,33 @@
+<div class="app-container">
+    <section class="home-intro">
+        <img class="landing-welcome-image" src="{{asset 'home-welcome.svg'}}">
+        <h1 class="h1">Besoin d'aide ?</h1>
+        {{search scoped=true}}
+    </section>
+
+
+    <section class="category-list">
+        {{#each categories}}
+
+            <article class="category-item category-item--{{@index}}">
+                <a href="{{url}}"><h2 class="h2">{{name}}</h2></a>
+            </article>
+        {{/each}}
+        {{pagination}}
+    </section>
+
+    {{#if promoted_articles}}
+        <section class="promoted-articles">
+            <h3>{{t 'promoted_articles'}}</h3>
+            <ul>
+                {{#each promoted_articles}}
+                    <li>
+                        <a href="{{url}}">{{title}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </section>
+    {{/if}}
+</div>
+
+

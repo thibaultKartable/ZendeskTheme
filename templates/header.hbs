@@ -1,0 +1,30 @@
+<nav class="user-nav">
+<div class="user-nav-container">
+    {{link 'my_activities' class='button button--outline button--my-activities'}}
+    {{link 'new_request' class='button button--submit-a-request'}}
+  {{#if alternative_locales}}
+    <div class="dropdown language-selector" aria-haspopup="true">
+      <a class="dropdown-toggle">
+        {{current_locale.name}}
+      </a>
+            <span class="dropdown-menu dropdown-menu-end" role="menu">
+        {{#each alternative_locales}}
+          <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+           
+          </a>
+        {{/each}}
+      </span>
+    </div>
+  {{/if}}
+  </div>
+</nav>
+<header class="header">
+  <div class="header-container">
+    {{#link 'help_center'}}
+      <img src="{{logo_url}}" alt="{{t 'logo'}}">
+      <span class="logo-help">Aide</span>
+    {{/link}}
+
+    <a class='close-link' href="https://kartable.fr"><i class="icon icon-close"></i></a>
+  </div>
+</header>
