@@ -1,15 +1,15 @@
-<nav class="sub-nav clearfix">
+<div class="app-container">
+    <nav class="breadcrumb">
   {{breadcrumbs}}
-</nav>
-<div class="clearfix">
-  {{subscribe}}
-  <article class="main-column">
-    <header class="article-header clearfix">
+    </nav>
+
+  <article class="article">
+    <header class="article__header">
       <h1>{{#if article.internal}}
         <span class="visibility-internal" data-title="{{t 'internal'}}">
           <span class="visibility-internal-icon"></span>
         </span>
-      {{/if}} {{article.title}}</h1>
+      {{/if}} {{article.title}}</h1>{{subscribe}}
     </header>
 
     <div class="subtle-wrap">
@@ -27,7 +27,7 @@
         </ul>
       </div>
 
-      <footer class="article-footer clearfix">
+      <!--<footer class="article__footer clearfix">
         {{#with article}}
           <div class="article-vote">
             <span class="article-vote-question">{{t 'was_this_article_helpful'}}</span>
@@ -40,7 +40,7 @@
             </small>
           </div>
         {{/with}}
-      </footer>
+      </footer>-->
 
       <div class="article-more-questions">
         {{request_callout}}
@@ -128,5 +128,4 @@
     {{recent_articles}}
     {{related_articles}}
   </aside>
-
 </div>

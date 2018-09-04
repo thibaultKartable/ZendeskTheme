@@ -580,18 +580,6 @@ select::-ms-expand {
   border-color: $color_4;
 }
 
-/*
- * Column size
- */
-.main-column {
-  float: left;
-  width: 618px;
-}
-
-.side-column {
-  float: right;
-  width: 298px;
-}
 
 /* ====================================================
    Buttons styles
@@ -614,6 +602,7 @@ select::-ms-expand {
 .button:hover {
   text-decoration:none;
   background-color:#00acf2;
+  color:white;
 }
 
 .button--outline {
@@ -1420,6 +1409,10 @@ button:active,
   display:block;
 }
 
+.app-container--section .questions-list {
+  margin-bottom:72px;
+}
+
 
 .app-container--section h1 .section-subscribe .dropdown-toggle{
   border-radius:80px;
@@ -1447,217 +1440,8 @@ button:active,
 /* ====================================================
    Article
    ==================================================== */
-.article-header h1 {
-font-weight:700;
-}
 
-.article-author {
-  font-weight: bold;
-}
 
-.article-metadata {
-  float: left;
-  padding-left: 55px;
-  position: relative;
-}
-
-.article-avatar {
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
-.article-avatar img {
-  max-height: 38px;
-  max-width: 38px;
-}
-
-.article-updated {
-  color: #8e8e8e;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.article-subscribe, .article-unsubscribe {
-  float: right;
-}
-
-.article-sidebar {
-  margin-top: -4px;
-}
-
-.article-sidebar h3 {
-  border-bottom: 1px solid;
-  border-bottom-color: #ececec;
-  border-bottom-color: rgba(0, 0, 0, 0.07);
-  font-size: 16px;
-  padding-bottom: 15px;
-  margin-top: 0;
-  font-weight:700;
-	
-}
-
-.article-sidebar h3:first-letter {
-  text-transform:capitalize;
-}
-
-.article-sidebar ul {
-  margin-bottom: 60px;
-}
-
-.article-body,
-.section-area .article-list {
-  margin-top: 6px;
-}
-
-.article-body {
-  font-size: 14px;
-  line-height: 30px;
-  word-wrap: break-word;
-}
-
-.article-body img {
-  border: 1px solid;
-  border-color: #ececec;
-  border-color: rgba(0, 0, 0, 0.07);
-  height: auto;
-  max-width: 100%;
-  padding: 3px;
-}
-
-.article-body pre {
-  background-color: #fbfbfb;
-  background-color: rgba(0, 0, 0, 0.02);
-  border: 1px solid;
-  border-color: #ececec;
-  border-color: rgba(0, 0, 0, 0.07);
-  border-radius: 3px;
-  padding: 10px 15px;
-  overflow: auto;
-  white-space: pre-wrap;
-}
-
-.article-body blockquote {
-  border-left: 1px solid;
-  border-color: #ececec;
-  border-color: rgba(0, 0, 0, 0.07);
-  color: #8e8e8e;
-  font-style: italic;
-  margin: 20px 0;
-  padding-left: 20px;
-}
-
-.article-body ul,
-.article-body ol {
-  margin: 20px 0 20px 20px;
-  list-style-position: outside;
-}
-
-.article-body li > ul,
-.article-body li > ol {
-  margin: 0 0 0 20px;
-}
-
-.article-body ul {
-  list-style-type: disc;
-}
-
-.article-body li {
-  margin-left: 20px;
-}
-
-.article-body table {
-  table-layout: fixed;
-}
-
-.article-footer {
-  margin: 50px 0 25px;
-}
-
-.article-footer .share {
-  float: right;
-}
-
-.article-vote {
-  float: left;
-  position: relative;
-}
-
-.article-vote-count {
-  position: absolute;
-  left: 100%;
-  margin-left: 106px;
-  top: 4px;
-  width: 300px;
-}
-
-.article-vote small {
-  color: #8e8e8e;
-  display: block;
-}
-
-.article-vote a:hover {
-  text-decoration: none;
-}
-
-.article-vote-controls {
-  position: absolute;
-  right: -85px;
-  top: 1px;
-}
-
-.article-vote-up, .article-vote-down {
-  background: #d5d5d5;
-  color: inherit;
-  font-family: "entypo";
-  border: 0;
-  border-radius: 50%;
-  box-shadow: none;
-  height: 30px;
-  width: 30px;
-  padding: 10px;
-}
-
-.article-vote-up:before {
-  color: #fafafa;
-  content: "\1f44d";
-}
-
-.article-vote-down:before {
-  color: #fafafa;
-  content: "\1f44e";
-}
-
-.article-voted {
-  box-shadow: inset 1px 1px 5px #666;
-  opacity: 1;
-}
-
-.article-vote-up.article-voted {
-  box-shadow: inset 1px 1px 5px #526f00;
-  background-color: #6b9100 !important;
-}
-
-.article-vote-down.article-voted {
-  box-shadow: inset 1px 1px 5px #99260e;
-  background-color: #b7391e !important;
-}
-
-.article-more-questions {
-  margin-bottom: 30px;
-}
-
-.article-comments {
-  margin-top: 50px;
-}
-
-.article-comments .subtle-wrap {
-  padding: 30px 30px 5px;
-}
-
-.recent-articles li, .related-articles li {
-  margin-bottom: 5px;
-}
 
 /* ====================================================
 Forms
