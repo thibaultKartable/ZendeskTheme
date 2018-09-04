@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69d336e3-4f8c-4545-b95e-efaddede8287" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change beforePath="$PROJECT_DIR$/templates/article_page.hbs" afterPath="$PROJECT_DIR$/templates/article_page.hbs" />
+      <change beforePath="$PROJECT_DIR$/templates/section_page.hbs" afterPath="$PROJECT_DIR$/templates/section_page.hbs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,28 +29,28 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="1444" column="0" lean-forward="true" selection-start-line="1444" selection-start-column="0" selection-end-line="1444" selection-end-column="0" />
+            <state relative-caret-position="499">
+              <caret line="1447" column="22" lean-forward="false" selection-start-line="1447" selection-start-column="22" selection-end-line="1447" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article_page.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article_page.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/article_page.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category_page.hbs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="category_page.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/category_page.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -56,8 +59,8 @@
       <file leaf-file-name="section_page.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/section_page.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="48" />
+            <state relative-caret-position="135">
+              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -116,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>background-image: url(&quot;$assets-icon-close-svg&quot;);caterof</find>
       <find>user-nav</find>
       <find>.h1</find>
       <find>footer-</find>
@@ -146,6 +148,7 @@
       <find>app-container--section</find>
       <find>.main-column</find>
       <find>article-</find>
+      <find>flex-direction: column;</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/assets</dir>
@@ -174,9 +177,9 @@
         <option value="$PROJECT_DIR$/templates/footer.hbs" />
         <option value="$PROJECT_DIR$/templates/home_page.hbs" />
         <option value="$PROJECT_DIR$/templates/category_page.hbs" />
-        <option value="$PROJECT_DIR$/templates/section_page.hbs" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/templates/article_page.hbs" />
+        <option value="$PROJECT_DIR$/templates/section_page.hbs" />
       </list>
     </option>
   </component>
@@ -280,12 +283,12 @@
       <updated>1535965489479</updated>
       <workItem from="1535965490945" duration="8236000" />
       <workItem from="1535979663024" duration="10051000" />
-      <workItem from="1536046961385" duration="1358000" />
+      <workItem from="1536046961385" duration="2107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19645000" />
+    <option name="totallyTimeSpent" value="20394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -574,34 +577,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/section_page.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/category_page.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="1444" column="0" lean-forward="true" selection-start-line="1444" selection-start-column="0" selection-end-line="1444" selection-end-column="0" />
+        <state relative-caret-position="499">
+          <caret line="1447" column="22" lean-forward="false" selection-start-line="1447" selection-start-column="22" selection-end-line="1447" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/article_page.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/section_page.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/category_page.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>

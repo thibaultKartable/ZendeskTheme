@@ -1414,7 +1414,8 @@ button:active,
 }
 
 
-.app-container--section h1 .section-subscribe .dropdown-toggle{
+.app-container--section h1 .section-subscribe .dropdown-toggle,
+.article .article-subscribe{
   border-radius:80px;
   background: $blueKartable;
   color:white;
@@ -1441,7 +1442,19 @@ button:active,
    Article
    ==================================================== */
 
+.article__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
 
+.article .h1 {
+  margin-bottom:0;
+}
+
+.article .article-subscribe {
+  margin:0 auto;
+}
 
 /* ====================================================
 Forms
