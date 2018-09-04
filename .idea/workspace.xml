@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69d336e3-4f8c-4545-b95e-efaddede8287" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change beforePath="$PROJECT_DIR$/templates/article_page.hbs" afterPath="$PROJECT_DIR$/templates/article_page.hbs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="article_page.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/article_page.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="122" column="14" lean-forward="true" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
+            <state relative-caret-position="480">
+              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -282,12 +280,12 @@
       <updated>1535965489479</updated>
       <workItem from="1535965490945" duration="8236000" />
       <workItem from="1535979663024" duration="10051000" />
-      <workItem from="1536046961385" duration="1266000" />
+      <workItem from="1536046961385" duration="1358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19553000" />
+    <option name="totallyTimeSpent" value="19645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -602,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/article_page.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="122" column="14" lean-forward="true" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
+        <state relative-caret-position="480">
+          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding />
         </state>
       </provider>
