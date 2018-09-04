@@ -10,6 +10,25 @@ $(document).ready(function() {
     window.open(this.href, "", "height = 500, width = 500");
   });
 
+  function setPlaceholder(input, value){
+      $(input).attr('placeholder', value);
+  }
+
+  setPlaceholder('#request_description', 'Description');
+  setPlaceholder('#request_custom_fields_27411149', 'Nom');
+  setPlaceholder('#request_custom_fields_27411169', 'Prénom');
+
+  var uploadButtonATag = $('#upload-dropzone span a');
+  $('#upload-dropzone span').text('');
+    $('#upload-dropzone span').append(uploadButtonATag);
+
+    $('.my-activities-nav').find('li').each(function(){
+      console.log($(this));
+      if (!$(this).children('a').length > 0) {
+          $(this).addClass('active');
+      }
+    });
+
   // toggle the share dropdown in communities
   $(".share-label").on("click", function(e) {
     e.stopPropagation();

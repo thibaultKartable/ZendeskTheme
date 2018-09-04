@@ -1,7 +1,8 @@
-<header class="my-activities-header">
+<div class="app-container">
+    <header class="my-activities-header">
   {{breadcrumbs}}
 </header>
-<nav class="my-activities-nav nav-bordered">
+<nav class="my-activities-nav">
   <ul>
     {{#if help_center.request_management_enabled}}
       <li>{{link 'requests'}}</li>
@@ -57,4 +58,5 @@
   {{else}}
     <p>{{t 'not_following'}}</p>
   {{/if}}
+</div>
 </div>

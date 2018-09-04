@@ -1,11 +1,6 @@
-<nav class="sub-nav clearfix">
-  {{breadcrumbs}}
-</nav>
+<div class="app-container">
 
-<div class="clearfix">
-
-  <section class="main-column">
-   <h1>{{t 'submit_a_request'}}{{#if parent}}
+   <h1 class="h1">{{t 'submit_a_request'}}{{#if parent}}
      <span class="follow-up-hint">
         {{follow_up}}
       </span>
@@ -14,7 +9,6 @@
     <div class="form">
       {{request_form}}
     </div>
-  </section>
 
 </div>
 
