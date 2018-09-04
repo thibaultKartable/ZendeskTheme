@@ -22,7 +22,7 @@ $(document).ready(function() {
   $('#upload-dropzone span').text('');
     $('#upload-dropzone span').append(uploadButtonATag);
 
-    $('.my-activities-nav').find('li').each(function(){
+    $('.my-activities-nav, .my-activities-sub-nav').find('li').each(function(){
       console.log($(this));
       if (!$(this).children('a').length > 0) {
           $(this).addClass('active');

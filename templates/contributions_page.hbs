@@ -11,6 +11,7 @@
     <li>{{link 'subscriptions'}}</li>
   </ul>
 </nav>
+    {{#if contributions}}
 <nav class="my-activities-sub-nav nav-spaced">
   <ul>
     {{#each filters}}
@@ -24,7 +25,7 @@
     {{/each}}
   </ul>
 </nav>
-
+    {{/if}}
 <div class="my-activities-table">
   {{#if contributions}}
     <table>
@@ -54,7 +55,9 @@
       </tbody>
     </table>
   {{else}}
+      <p class="empty-state">
     {{t 'no_contributions'}}
+      </p>
   {{/if}}
 
   {{pagination}}
