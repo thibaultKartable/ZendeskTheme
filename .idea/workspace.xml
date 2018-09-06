@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69d336e3-4f8c-4545-b95e-efaddede8287" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
-      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change beforePath="$PROJECT_DIR$/templates/community_post_list_page.hbs" afterPath="$PROJECT_DIR$/templates/community_post_list_page.hbs" />
-      <change beforePath="$PROJECT_DIR$/templates/community_post_page.hbs" afterPath="$PROJECT_DIR$/templates/community_post_page.hbs" />
-      <change beforePath="$PROJECT_DIR$/templates/community_topic_list_page.hbs" afterPath="$PROJECT_DIR$/templates/community_topic_list_page.hbs" />
-      <change beforePath="$PROJECT_DIR$/templates/community_topic_page.hbs" afterPath="$PROJECT_DIR$/templates/community_topic_page.hbs" />
-      <change beforePath="$PROJECT_DIR$/templates/error_page.hbs" afterPath="$PROJECT_DIR$/templates/error_page.hbs" />
-      <change beforePath="$PROJECT_DIR$/templates/new_community_post_page.hbs" afterPath="$PROJECT_DIR$/templates/new_community_post_page.hbs" />
-      <change beforePath="$PROJECT_DIR$/templates/request_page.hbs" afterPath="$PROJECT_DIR$/templates/request_page.hbs" />
-      <change beforePath="$PROJECT_DIR$/templates/search_results.hbs" afterPath="$PROJECT_DIR$/templates/search_results.hbs" />
-      <change beforePath="$PROJECT_DIR$/templates/user_profile_page.hbs" afterPath="$PROJECT_DIR$/templates/user_profile_page.hbs" />
-    </list>
+    <list default="true" id="69d336e3-4f8c-4545-b95e-efaddede8287" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -315,12 +302,12 @@
       <workItem from="1536074963545" duration="1299000" />
       <workItem from="1536133748948" duration="761000" />
       <workItem from="1536142526896" duration="4147000" />
-      <workItem from="1536219907683" duration="8000" />
+      <workItem from="1536219907683" duration="96000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37309000" />
+    <option name="totallyTimeSpent" value="37397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
