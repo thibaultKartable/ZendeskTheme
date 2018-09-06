@@ -2,16 +2,25 @@
 
 Theme Kartable pour le support Zendesk.
 
-1. Install Rake
-$ gem install rake
+## Requirements
 
-2. Install Zendesk App Tool
-$ gem install zendesk_apps_tools
+- Rake
 
-3. Launch theme preview
-$ zat theme preview
+`$ gem install rake`
 
-4. Visit theme preview
-https://support.kartable.fr/hc/admin/local_preview/start
+- Zendesk App Tool
 
-5. Allow mixed-contents into browser
+`$ gem install zendesk_apps_tools`
+
+
+##Start
+`$ zat theme preview`   And login with a kartable zendesk account.
+
+Visit https://support.kartable.fr/hc/admin/local_preview/start to view your changes.
+
+ Allow mixed-contents into browser :
+- Firefox : Click on lock into address bar
+- Chrome : Click on shield into address bar
+
+##Export
+Zip folder and import it from Zendesk backoffice.
