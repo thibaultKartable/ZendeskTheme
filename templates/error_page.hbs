@@ -1,19 +1,20 @@
-<div class="error-page">
-  <h1>{{t 'oops'}}</h1>
+<div class="app-container error-page">
+    <img class="error-image" src="{{asset 'stressed-kid.svg'}}">
+  <h1 class="h1">Il y a un problème...</h1>
   {{#is error 'unauthorized'}}
-    <h2>{{link 'sign_in'}}</h2>
+    <p>{{link 'sign_in'}}</p>
   {{/is}}
 
   {{#is error 'forbidden'}}
-    <h2>{{t 'not_authorized'}}</h2>
+    <p>{{t 'not_authorized'}}</p>
   {{/is}}
 
   {{#is error 'not_found'}}
-    <h2>{{t 'nonexistent_page'}}</h2>
-    <p>{{t 'mistyped_address_or_moved_page'}}</p>
+    <p>{{t 'nonexistent_page'}}.</p>
+    <p>{{t 'mistyped_address_or_moved_page'}}.</p>
   {{/is}}
 
-  {{#link 'help_center'}}
-    {{t 'back_to_homepage'}}
+  {{#link 'help_center' class='button button--big button--outline'}}
+    Retour
   {{/link}}
 </div>

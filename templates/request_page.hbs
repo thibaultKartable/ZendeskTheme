@@ -2,11 +2,11 @@
     <nav class="sub-nav clearfix">
   {{breadcrumbs}}
 </nav>
-<div class="clearfix">
+<div class="request-container">
   <section class="main-column">
     {{satisfaction}}
-    <h1>
-      <span class="request-id">{{t 'request' request_number=request.id}}</span>
+    <h1 class="h1">
+      {{t 'request' request_number=request.id}}
       {{request.subject}}
     </h1>
     <ul class="comment-list">
@@ -71,7 +71,7 @@
             </a>
           {{/if}}
 
-          {{input type='submit'}}
+          {{input type='submit' class='button button--outline'}}
         </div>
       </div>
     {{/form}}
@@ -164,8 +164,7 @@
         </dd>
       {{/if}}
     </dl>
-    {{link 'new_request' role='button'}}
+      {{link 'new_request' role='button' class="button"}}
   </section>
-
 </div>
 </div>

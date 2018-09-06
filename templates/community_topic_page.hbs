@@ -1,3 +1,5 @@
+<div class="app-container community-page">
+
 <nav class="sub-nav">
   {{breadcrumbs}}
   {{search scoped=true}}
@@ -12,9 +14,9 @@
     {{/if}}
     {{topic.name}}
   </h1>
-  <span class="post-to-community">
+
     {{link 'new_post' role='button' topic_id=topic.id}}
-  </span>
+
 </header>
 
 <p>{{topic.description}}</p>
@@ -78,3 +80,4 @@
 {{/each}}
 
 {{pagination}}
+</div>

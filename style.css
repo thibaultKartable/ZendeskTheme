@@ -527,6 +527,8 @@ button, [role=button], [type=button], [type=submit] {
   box-sizing:border-box;
   transition:all ease-in-out 0.2s;
   border: none;
+  white-space: nowrap;
+  text-align:center;
 }
 
 .button:hover {
@@ -705,19 +707,13 @@ ul, ol {
 }
 
 .page-header {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 30px;
-  min-height: 50px;
-  padding-bottom: 15px;
+  margin: 36px 0;
 }
 
-.page-header > * {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.page-header > *:first-child {
-  width: 100%;
+.page-header a {
+  width:100%;
+  margin:16px auto;
+  display:block;
 }
 
 .page-header + p {
@@ -728,6 +724,17 @@ ul, ol {
 .page-header h1 {
   font-size: 20px;
   font-weight: 400;
+}
+@media screen and (min-width: 760px){
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  .page-header a {
+    width:auto;
+    margin:0;
+  }
 }
 
 /* ====================================================
@@ -933,13 +940,24 @@ a[role="button"]:hover {
   box-shadow: none;
 }
 
-.topic-follow [role=button], .post-follow [role=button] {
-  padding: 0 10px !important;
+.new_community_post {
+  max-width:40rem;
+  width:100%;
+  margin: 0 auto;
+}
+.new_community_post .form-field {
+  margin-bottom: 16px;
+}
+.new_community_post footer {
+  text-align:center;
 }
 
-/* ====================================================
-   Footer
-   ==================================================== */
+.community-page .search{
+  margin-top:32px;
+}
+  /* ====================================================
+     Footer
+     ==================================================== */
 
 .ready-to-start {
   border-top:1px solid whitesmoke;
@@ -1758,12 +1776,6 @@ margin-bottom:16px;
   color: #77a500;
 }
 
-.comment-form textarea {
-  display: block;
-  border-radius: 2px 2px 0 0;
-  border-width: 1px;
-}
-
 .comment-ccs + textarea,
 .comment-attachments {
   margin-top: 10px;
@@ -1849,6 +1861,24 @@ margin-bottom:16px;
 
 .my-activities-header {
 
+}
+
+@media screen and (min-width: 760px){
+  .request-container {
+    display:flex;
+  }
+  .side-column {
+    width: 400px;
+    flex-shrink: 0;
+    margin-left: 30px;
+    margin-top: 135px;
+  }
+  .side-column .button {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 290px;
+  }
 }
 
 .my-activities-header .breadcrumbs li {
@@ -2171,10 +2201,6 @@ margin-bottom:16px;
 }
 
 /* Community */
-.post-to-community a {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 .post-to-community a:before {
   content: "\2b\00a0";
@@ -2183,17 +2209,30 @@ margin-bottom:16px;
 }
 
 /* Community topics page */
+.topic-list {
+  margin-bottom: 32px;
+}
+
 .topic-list li {
   display: inline-block;
-  padding: 0 100px 30px 0;
-  vertical-align: top;
-  width: 49.5%;
+  margin: 16px 0 16px 0;
 }
 
 .topic-list li h3, .topic-list li p {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 760px) {
+  .topic-list {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+
+  .topic-list li {
+    width: 45%;
+  }
 }
 
 .topic-list li p {
@@ -2276,7 +2315,7 @@ margin-bottom:16px;
 .post-overview-count {
   background: #f9f9f9;
   border-radius: 3px;
-  color: #bebebe;
+  color: $color_5;
   float: right;
   font-size: 10px;
   margin-left: 10px;
@@ -2287,7 +2326,7 @@ margin-bottom:16px;
 }
 
 .post-overview-count strong {
-  color: $color_4;
+  color: $color_5;
   display: block;
   font-size: 13px;
 }
@@ -2598,25 +2637,27 @@ body.community-enabled .search-results-column + .search-results-column {
   bottom: -50px;
 }
 
-.error-page {
+.error-image {
+  width: 170px;
   margin: 0 auto;
-  max-width: 500px;
-  padding-top: 5%;
+  display: block;
 }
-
-.error-page h1 {
-  font-size: 52px;
-  margin-bottom: 0;
+.error-page {
+  margin-bottom:32px;
 }
-
-.error-page h2 {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
 .error-page > a {
   display: block;
   margin-top: 25px;
+}
+@media screen and (min-width: 760px) {
+  .error-page .button {
+    width:200px;
+    margin: 32px auto;
+  }
+
+  .error-page {
+    text-align:center;
+  }
 }
 
 .recent-activity {
@@ -2746,7 +2787,6 @@ body.community-enabled .search-results-column + .search-results-column {
 .profile-header {
   border-bottom: 1px solid #eee;
   padding: 25px 0;
-  display: flex;
 }
 
 .profile-header .profile-info {
@@ -2769,6 +2809,10 @@ body.community-enabled .search-results-column + .search-results-column {
   width: 65px;
   height: 65px;
   border-radius: 50%;
+}
+
+.profile-nav li {
+  width: 100%;
 }
 
 .profile-avatar-agent:after {
@@ -2897,10 +2941,6 @@ body.community-enabled .search-results-column + .search-results-column {
   margin-bottom: 40.5px;
   border-bottom: 1px solid #eee;
   padding: 10.5px 0;
-}
-
-.profile-section {
-  width: calc(100% - 271px - 60px);
 }
 
 .profile-section-header {

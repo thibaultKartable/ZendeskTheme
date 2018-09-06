@@ -17,6 +17,7 @@ $(document).ready(function() {
   setPlaceholder('#request_description', 'Description');
   setPlaceholder('#request_custom_fields_27411149', 'Nom');
   setPlaceholder('#request_custom_fields_27411169', 'Prénom');
+  setPlaceholder('#community_post_title', 'Titre');
 
   var uploadButtonATag = $('#upload-dropzone span a');
   $('#upload-dropzone span').text('');

@@ -1,4 +1,5 @@
-<nav class="sub-nav">
+<div class="app-container community-page">
+    <nav class="sub-nav">
   {{breadcrumbs}}
   {{search}}
 </nav>
@@ -17,9 +18,9 @@
       {{/link}}
     </span>
   </span>
-  <span class="post-to-community">
+
     {{link 'new_post' role='button'}}
-  </span>
+
 </header>
 
 {{#unless topics}}
@@ -47,3 +48,4 @@
 </ul>
 
 {{pagination}}
+</div>
