@@ -42,13 +42,6 @@
           "description": " ",
           "label": "color_5",
           "value": "#585f74"
-        },
-        {
-          "identifier": "blueKartable",
-          "type": "color",
-          "description": " ",
-          "label": "blueKartable",
-          "value": "#00C3FF"
         }
       ]
     },

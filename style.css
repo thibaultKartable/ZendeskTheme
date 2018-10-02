@@ -515,7 +515,7 @@ select::-ms-expand {
 
 .button,
 button, [role=button], [type=button], [type=submit] {
-  background:$blueKartable;
+  background:#00C3FF;
   color: white;
   border-radius: 50px;
   line-height: 1;
@@ -539,8 +539,8 @@ button, [role=button], [type=button], [type=submit] {
 
 .button--outline {
   background: transparent;
-  color:$blueKartable;
-  box-shadow: inset 0 0 0px 2px $blueKartable;
+  color:#00C3FF;
+  box-shadow: inset 0 0 0px 2px #00C3FF;
 }
 
 .button--outline:hover {
@@ -630,7 +630,7 @@ h1, h2, h3, h4, h5, h6 {
   a:hover {
     cursor: pointer;
     text-decoration:none;
-    color: $blueKartable;
+    color: #00C3FF;
   }
 
 }
@@ -761,10 +761,10 @@ main {
 }
 
 @media screen and (min-width:760px){
-  .header-container,.user-nav-container {
+  .header-container,.user-nav-container,.footer-container {
     max-width:1250px;
   }
-  .app-container,.footer-container {
+  .app-container {
     max-width:1050px;
   }
 }
@@ -786,7 +786,7 @@ main {
 
 .logo-help {
   display:inline-block;
-  background:$blueKartable;
+  background:#00C3FF;
   padding:7px 10px;
   border-radius:7px;
   color:white;
@@ -808,7 +808,6 @@ main {
   display: flex;
   align-items: center;
   border-bottom: 1px solid whitesmoke;
-  padding:16px 0;
 }
 
 .user-nav-container {
@@ -822,7 +821,7 @@ main {
   }
 
   .user-nav-container .button {
-      margin-left:16px;
+    margin: 16px 0 16px 16px;
   }
 }
 
@@ -1038,16 +1037,10 @@ a[role="button"]:hover {
 }
 
 .links-list__container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+column-count: 2
 }
 
 .links-list__item {
-  width: 49%;
   list-style: none;
   margin-bottom: 8px;
   text-align: left;
@@ -1100,9 +1093,9 @@ a[role="button"]:hover {
   .download-app__actions a {
     width: 170px;
   }
-  .links-list__item {
-    width: 19%;
-  }
+  .links-list__container {
+    column-count: 5;
+    }
   .links-list__item a {
     font-size:1.8rem;
     transition: all ease-in-out 0.2s;
@@ -1110,7 +1103,7 @@ a[role="button"]:hover {
 
   .links-list__item a:hover {
     text-decoration:none;
-    color:$blueKartable;
+    color:#00C3FF;
   }
 
 }
@@ -1341,7 +1334,7 @@ a[role="button"]:hover {
 .app-container--section h1 .section-subscribe .dropdown-toggle,
 .article .article-subscribe{
   border-radius:80px;
-  background: $blueKartable;
+  background: #00C3FF;
   color:white;
   text-transform:uppercase;
   font-weight:bold;
@@ -1456,7 +1449,7 @@ input, textarea, select, #upload-dropzone {
 }
 
 input:focus, textarea:focus, select:focus {
-  border: 2px solid $blueKartable;
+  border: 2px solid #00C3FF;
 }
 
 .nesty-input{
@@ -1986,7 +1979,7 @@ margin-bottom:16px;
   font-weight: bold;
 }
 .my-activities-nav li.active {
-  border-color:$blueKartable;
+  border-color:#00C3FF;
 }
 
 .my-activities-nav li a {
