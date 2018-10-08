@@ -1,6 +1,5 @@
 <div class="app-container community-page">
     <nav class="sub-nav">
-  {{breadcrumbs}}
   {{search}}
 </nav>
 
@@ -30,7 +29,7 @@
 <ul class="topic-list">
   {{#each topics}}
     <li>
-      <h3>
+      <h3 class="h3">
         {{#if internal}}
           <span class="visibility-internal" data-title="{{t 'internal'}}">
             <span class="visibility-internal-icon"></span>

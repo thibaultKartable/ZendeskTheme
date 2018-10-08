@@ -94,7 +94,7 @@
         {{#if activities}}
 
           <header class="profile-section-header">
-            <h2 class="profile-section-title">{{t 'activity_overview'}}</h2>
+            <h2 class="profile-section-title h2">{{t 'activity_overview'}}</h2>
             <span class="profile-section-description">{{t 'latest_activity' name=user.name}}</span>
           </header>
 
@@ -111,7 +111,7 @@
                   <div class="profile-activity-contribution profile-contribution">
                     <header class="profile-contribution-header">
                       {{#isnt object_type 'comment'}}
-                        <h3 class="profile-contribution-title"><a href="{{url}}">{{title}}</a></h3>
+                        <h3 class="profile-contribution-title h3"><a href="{{url}}">{{title}}</a></h3>
                       {{/isnt}}
 
                       {{#isnt status 'none'}}
@@ -175,7 +175,7 @@
         {{#if contributions}}
 
           <header class="profile-section-header">
-            <h2 class="profile-section-title">{{t filter_by}}</h2>
+            <h2 class="profile-section-title h2">{{t filter_by}}</h2>
             {{#if sorters}}
               <span class="profile-section-description">{{sorter_description}}</span>
               <span class="profile-section-sorter dropdown">
@@ -199,7 +199,7 @@
               <li class="profile-contribution">
                 <header class="profile-contribution-header">
                   {{#isnt object_type 'comment'}}
-                    <h3 class="profile-contribution-title"><a href="{{url}}">{{title}}</a></h3>
+                    <h3 class="profile-contribution-title h3"><a href="{{url}}">{{title}}</a></h3>
                   {{/isnt}}
 
                   {{#isnt status 'none'}}

@@ -1,11 +1,8 @@
 <div class="app-container">
-<nav class="sub-nav clearfix">
-  {{breadcrumbs}}
-</nav>
 <div class="search-results clearfix">
   <h1 class="h1">{{t 'results' query=query count=results_count}}</h1>
   <section class="search-results-column">
-    <h2 class="search-results-subheading">
+    <h2 class="search-results-subheading h2">
       {{t 'knowledge_base'}}
     </h2>
     {{#if article_results}}
@@ -45,7 +42,7 @@
 
   {{#if help_center.community_enabled}}
     <section class="search-results-column">
-      <h2 class="search-results-subheading">
+      <h2 class="search-results-subheading h2">
         {{t 'community'}}
       </h2>
       {{#if post_results}}
